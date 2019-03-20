@@ -1,0 +1,157 @@
+body{
+  font-size: 30px;
+}
+
+
+/*Nav Bar*/
+  .toolbar{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+  }
+
+  .toolbar li{
+    float: left;
+  }
+
+  .toolbar a{
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 30px;
+
+  }
+
+  .toolbar a:hover{
+    background-color: #ddd;
+    color: black;
+  }
+
+
+
+.row{    /*container  for APIs*/
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  -ms-flex-wrap:wrap;
+  flex-wrap: wrap;
+  padding: 0 40px 0 40px;
+}
+
+.Roaster{
+  -ms-flex : 33%;
+  flex : 33%;
+  background-color: white;
+}
+
+.Standing{
+  -ms-flex : 33%;
+  flex :33%;
+  background-color: white;
+}
+
+.Schedule{
+  -ms-flex : 33%;
+  flex :33%;
+  background-color: white;
+}
+
+
+/*  jersey */
+.kit{
+  display: flex;
+}
+
+.jersey{
+  flex: 33.33%;
+  position: relative;
+  width: 50%;
+}
+
+.images{
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.overlay {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.jersey:hover .overlay {
+  opacity: 1;
+}
+
+.jersey:hover .images{
+  opacity: 0.3;
+}
+
+
+.text {
+  color: black;
+  font-size: 20px;
+  padding: 16px 32px;
+}
+
+.footer{  /*footer section*/
+  padding: 20px;
+  text-align: center;
+  background: black;
+  overflow: hidden;
+  display: flex;
+}
+
+.footerleft{
+  float: left;
+  flex:30%;
+}
+
+.footerPic{
+  height: 120px;
+  width: 100px;
+  padding: 0;
+}
+
+
+.follow{
+  float: right;
+  flex: 60%;
+}
+
+.follow ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.follow a{
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.follow a:hover{
+  background-color: #ddd;
+    color: black;
+}
+  /* for mobile */
+  @media screen and max-width: 480px{
+    .toolbar{
+      flex-direction: column;
+      text-align: left;
+    }
+  }
